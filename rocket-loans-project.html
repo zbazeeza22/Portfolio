@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Loans Debt Calculator - Zain Azeeza</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="nav-wrapper">
+        <a href="index.html" class="nav-logo">Zain Azeeza</a>
+        <nav class="nav-menu">
+            <a href="index.html">Homepage</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact Me</a>
+        </nav>
+    </div>
+
+    <main class="container">
+        <section class="project-detail">
+            <div class="section-content">
+                <h1>Debt Calculator</h1>
+                <p class="project-category">Rocket Loans</p>
+                
+                <div class="project-hero">
+                    <img src="assets/css/images/assets/css/images/rocket-loans-logo.png" alt="Rocket Loans Logo">
+                </div>
+
+                <div class="project-info">
+                    <h2>Overview</h2>
+                    <p>Detailed description of the project...</p>
+
+                    <h2>Challenge</h2>
+                    <p>Description of the problems and challenges...</p>
+
+                    <h2>Solution</h2>
+                    <p>How you solved the problems...</p>
+
+                    <h2>Results</h2>
+                    <p>The outcome and impact...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:zainazee@umich.edu"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const navWrapper = document.querySelector('.nav-wrapper');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navWrapper.classList.remove('scroll-up');
+                return;
+            }
+            
+            if (currentScroll > lastScroll && !navWrapper.classList.contains('scroll-down')) {
+                navWrapper.classList.remove('scroll-up');
+                navWrapper.classList.add('scroll-down');
+            } else if (currentScroll < lastScroll && navWrapper.classList.contains('scroll-down')) {
+                navWrapper.classList.remove('scroll-down');
+                navWrapper.classList.add('scroll-up');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html> 

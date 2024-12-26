@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Your Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <button class="hamburger" id="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </button>
+
+    <nav class="nav-menu" id="nav-menu">
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Featured Work</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1>Featured Work</h1>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name</h3>
+                        <p class="project-category">Category</p>
+                        <p class="project-description">Brief description of the project and your role in it.</p>
+                        <a href="#" class="button light">View Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name</h3>
+                        <p class="project-category">Category</p>
+                        <p class="project-description">Brief description of the project and your role in it.</p>
+                        <a href="#" class="button light">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="profile-section">
+            <img src="assets/images/coffee-icon.png" alt="Coffee Icon" class="small-icon">
+            <h3>[Your Name]</h3>
+            <p>Product Manager & Front-end developer from [Location].</p>
+        </div>
+
+        <nav class="footer-nav">
+            <a href="index.html">Homepage</a>
+            <a href="about.html">About [Your Name]</a>
+            <a href="projects.html">Featured work</a>
+            <a href="contact.html">Contact me</a>
+        </nav>
+
+        <p class="social-text">Keep updated about my work following me on social media.</p>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-coffee"></i></a>
+        </div>
+        <p class="copyright">&copy; Copyright [Your Name] 2024 — All rights reserved</p>
+        <p class="credits">Icons from Iconfinder</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
